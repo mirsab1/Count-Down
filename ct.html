@@ -6,17 +6,51 @@
   <title>Coming Soon</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
       text-align: center;
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 40px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      width: 80%;
     }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #333;
+    }
+
     .countdown {
-      font-size: 24px;
+      font-size: 2rem;
+      color: #555;
+      margin-top: 20px;
     }
+
+    .coming-soon-message {
+      color: #888;
+      font-size: 1.2rem;
+      margin-top: 20px;
+    }
+
   </style>
 </head>
 <body>
-  <h1>Coming Soon</h1>
-  <div class="countdown" id="countdown"></div>
+  <div class="container">
+    <h1>Coming Soon</h1>
+    <div class="countdown" id="countdown"></div>
+    <p class="coming-soon-message">Stay tuned for exciting updates!</p>
+  </div>
 
   <script>
     // Set the date we're counting down to
